@@ -1,5 +1,5 @@
 -- Script Name: String Split
--- Script Type : Fuction
+-- Script Type: Fuction
 -- Develop By: Muhammad Imran
 -- Date Created: 09 Dec 2022
 -- Modify Date: 21 Dec 2022
