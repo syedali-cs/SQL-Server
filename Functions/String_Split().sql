@@ -1,11 +1,13 @@
---In SQL Server 2022, an enhancement came in STRING_SPLIT() function, 
---which was a long awaited functionality. This enhancement provides a new column name ordinal, 
---which has row number for each string split by this function.
---Let me create a sample to demonstrate the functionality of new ordinal column in STRING_SPLIT() function as shown below.
+-- Script Name: String Split
+-- Script Type : Fuction
+-- Develop By: Muhammad Imran
+-- Date Created: 09 Dec 2022
+-- Modify Date: 21 Dec 2022
 
 USE tempdb
 GO
-    
+
+--Creating Table Employee 
 CREATE TABLE #Employee
 (
  EmployeeID     INT IDENTITY(1,1),
@@ -13,7 +15,8 @@ CREATE TABLE #Employee
  EmailAddresses VARCHAR(500)
 );
 GO
-    
+
+--Inserting Records into Employee table 
 INSERT INTO #Employee(EmployeeName, EmailAddresses)
 VALUES
 ('John', 'John_1@gmail.com;John_2@gmail.com;John_3@hotmail.com'),
@@ -25,6 +28,7 @@ GO
 SELECT * FROM #Employee;
 GO
 
+--Using String Split function 
 USE tempdb
 GO
  
@@ -35,4 +39,17 @@ SELECT EmployeeID
 FROM   #Employee
 CROSS APPLY STRING_SPLIT(EmailAddresses, ';', 1);
 GO
---OUTPUT
+
+--Example 2
+USE tempdb
+GO
+  
+SELECT EmployeeID
+     , EmployeeName
+     , value AS EmailAddress
+     , Ordinal
+FROM   #Employee
+CROSS APPLY STRING_SPLIT (EmailAddresses, ';', 1)
+WHERE ordinal<3;
+GO
+
