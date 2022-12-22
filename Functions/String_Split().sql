@@ -59,3 +59,7 @@ WHERE ordinal<3;
 GO
 -- End of example-2
 
+--clean up 
+DROP table employee;
+GO
+
