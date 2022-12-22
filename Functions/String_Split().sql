@@ -26,6 +26,7 @@ VALUES
 ('Ackerman', 'Ackerman_1@gmail.com;Ackerman_2@hotmail.com');
 GO
  
+--Browse employee data
 SELECT * FROM #Employee;
 GO
 
