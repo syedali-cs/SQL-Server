@@ -1,6 +1,6 @@
 -- Script Name: String Split
 -- Script Type: Fuction
--- Develop By: Muhammad Imran
+-- Developed By: Muhammad Imran
 -- Date Created: 09 Dec 2022
 -- Date Modified: 21 Dec 2022
 
