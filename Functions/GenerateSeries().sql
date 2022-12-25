@@ -1,8 +1,9 @@
--- Script Name: Generate Series
--- Script Type: Fuction
--- Develop By: Muhammad Imran
--- Date Created: 16 Nov 2022
--- Date Modified: 22 Dec 2022
+--Script Name: Generate Series
+--Script Type: Fuction
+--Article: https://raresql.com/2022/11/16/sql-server-2022-generate_series-function/
+--Develop By: Muhammad Imran
+--Date Created: 16 Nov 2022
+--Date Modified: 22 Dec 2022
 
 --Old approach
 
