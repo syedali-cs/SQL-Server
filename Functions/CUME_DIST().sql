@@ -8,7 +8,7 @@
 --Example-1
 
 --Create table
-Create table [Daily_Gold_Rate]
+CREATE TABLE [Daily_Gold_Rate]
 (
  [S.No] int,
  [Date] datetime,
@@ -25,13 +25,13 @@ INSERT INTO [Daily_Gold_Rate] values(13,'2012-12-07',18,154.50)
 GO 
  
 --Use CUME_DIST() function
-Select Row_Number() OVER (ORDER BY [Carat]
+SELECT Row_Number() OVER (ORDER BY [Carat]
      , [Gold Rate] as [Row Number]
      , [Date]
      , [Carat]
      , [Gold Rate]
      , CUME_DIST () OVER (ORDER BY [Carat],[Gold Rate]) AS [CUME_DIST]
-from [Daily_Gold_Rate]
+FROM [Daily_Gold_Rate]
 
 --End of example-1
 
@@ -43,9 +43,8 @@ INSERT INTO [Daily_Gold_Rate] values(2,'2012-12-03',22,190.50)
 INSERT INTO [Daily_Gold_Rate] values(3,'2012-12-03',24,202.23)
 INSERT INTO [Daily_Gold_Rate] values(5,'2012-12-04',22,191.00)
 INSERT INTO [Daily_Gold_Rate] values(6,'2012-12-04',24,202.25)
- 
 INSERT INTO [Daily_Gold_Rate] values(8,'2012-12-05',22,190.00)
-Insert into [Daily_Gold_Rate] values(9,'2012-12-05',24,203.25)
+INSERT INTO [Daily_Gold_Rate] values(9,'2012-12-05',24,203.25)
 INSERT INTO [Daily_Gold_Rate] values(11,'2012-12-06',22,189.50)
 INSERT INTO [Daily_Gold_Rate] values(12,'2012-12-06',24,201.50)
 INSERT INTO [Daily_Gold_Rate] values(14,'2012-12-07',22,189.00)
@@ -57,6 +56,6 @@ SELECT Row_Number() OVER (Partition by [Carat] ORDER BY [Carat], [Gold Rate]) AS
      , [Carat]
      , [Gold Rate]
      , CUME_DIST () OVER (Partition by [Carat] ORDER BY [Carat],[Gold Rate]) AS [CUME_DIST]
-from [Daily_Gold_Rate]
+FROM [Daily_Gold_Rate]
 
 --End of example-2
