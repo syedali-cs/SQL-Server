@@ -1,8 +1,9 @@
--- Script Name: Concat()
--- Script Type: Fuction
--- Developed By: Muhammad Imran
--- Date Created: 29th Nov 2022
--- Date Modified: 22 Dec 2022
+--Script Name: Concat()
+--Script Type: Fuction
+--Article: https://raresql.com/2022/11/29/sql-server-concat-function/
+--Developed By: Muhammad Imran
+--Date Created: 29th Nov 2022
+--Date Modified: 22 Dec 2022
 
 --Example 1
 --Concatenate multiple columns having NULL values
