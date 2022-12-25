@@ -1,8 +1,9 @@
--- Script Name: IIF()
--- Script Type: Function
--- Developed By: Muhammad Imran
--- Date Created: 06 Aug 2012
--- Date Modified: 21 Dec 2022
+--Script Name: IIF()
+--Script Type: Function
+--Article: https://raresql.com/2012/08/06/sql-server-2012-new-logical-function-iif/
+--Developed By: Muhammad Imran
+--Date Created: 06 Aug 2012
+--Date Modified: 21 Dec 2022
 
 --Example-1
 
