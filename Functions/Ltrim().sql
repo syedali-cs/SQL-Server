@@ -1,5 +1,6 @@
 --Script Name: LTRIM()
 --Script Type: Function
+--Article: https://raresql.com/2022/11/08/sql-server-2022-tsql-enhancement-ltrim-function/ 
 --Developed By: Muhammad Imran
 --Date Created: 08 Nov 2022
 --Date Modified: 22 Dec 2022
@@ -12,7 +13,7 @@ DECLARE @EMAIL VARCHAR(100)
 --Set value of variable
 SET @EMAIL = '     KenSanchez@gmail.com';
 
---Use LTRIM()
+--Use LTRIM() function
 SELECT  @EMAIL   AS [OriginalEmail]
 , LTRIM(@EMAIL)  AS [LTrimEmail];
 GO
@@ -29,7 +30,7 @@ DECLARE @EMAIL VARCHAR(100)
 --Set value of variable
 SET @EMAIL = '     ;KenSanchez@gmail.com';
 
---Use LTRIM()
+--Use LTRIM() function
 SELECT  @EMAIL       AS [OriginalEmail]
 , LTRIM(@EMAIL,'; ')  AS [LTrimEmail];
 GO
@@ -44,7 +45,7 @@ DECLARE @EMAIL VARCHAR(100)
 --Set value of variable
 SET @EMAIL = '     KenSanchez@gmail.com';
 
---Use LTRIM()
+--Use LTRIM() function
 SELECT  @EMAIL   AS [OriginalEmail]
 , LTRIM(@EMAIL)  AS [LTrimEmail]
 , LTRIM(@EMAIL,' ') AS [LTrimEmailWithParameter];
