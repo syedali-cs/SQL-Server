@@ -1,10 +1,12 @@
 -- Script Name: DATETRUNC()
--- Script Type: Function
--- Developed By: Muhammad Imran
--- Date Created: 04 Nov 2022
--- Date Modified: 22 Dec 2022
+--Script Type: solution
+--Article: 
+--Developed By: Muhammad Imran
+--Date Created: 04 Nov 2022
+--Date Modified: 22 Dec 2022
 
 --Example-1
+--
 
 --Declare variable
 DECLARE @DateTime DATETIME2
@@ -17,49 +19,41 @@ SELECT @DateTime                    AS [Current Date]
       , DATETRUNC(YEAR,@DateTime)   AS [DateTrunc Function]
       ,'Extract Date Till The YEAR' AS [Description]
 UNION
---Use DateTrunc Function
 SELECT @DateTime                      AS [Current Date]
      , DATETRUNC(QUARTER,@DateTime)   AS [DateTrunc Function]
      ,'Extract Date Till The QUARTER' AS [Description]
 UNION
---Use DateTrunc Function
 SELECT @DateTime                    AS [Current Date]
      , DATETRUNC(MONTH,@DateTime)   AS [DateTrunc Function]
      ,'Extract Date Till The MONTH' AS [Description]
 UNION
---Use DateTrunc Function
 SELECT @DateTime                    AS [Current Date]
      , DATETRUNC(WEEK,@DateTime)    AS [DateTrunc Function]
      ,'Extract Date Till The WEEK'  AS [Description]
 UNION
---Use DateTrunc Function
 SELECT @DateTime                    AS [Current Date]
      , DATETRUNC(DAY,@DateTime)     AS [DateTrunc Function]
      , 'Extract Date Till The DAY'  AS [Description]
 UNION
---Use DateTrunc Function
 SELECT @DateTime                    AS [Current Date]
      , DATETRUNC(HOUR,@DateTime)    AS [DateTrunc  Function]
      , 'Extract Date Till The HOUR' AS [Description]
 UNION
---Use DateTrunc Function
 SELECT @DateTime                      AS [Current Date]
       , DATETRUNC(MINUTE,@DateTime)   AS [DateTrunc  Function]
       , 'Extract Date Till The MINUTE'AS [Description]
 UNION
---Use DateTrunc Function
 SELECT @DateTime                       AS [Current Date]
       , DATETRUNC(SECOND,@DateTime)    AS [DateTrunc  Function]
       , 'Extract Date Till The SECOND' AS [Description]
 UNION
---Use DateTrunc Function
 SELECT @DateTime                            AS [Current Date]
       , DATETRUNC(MILLISECOND,@DateTime)    AS [DateTrunc  Function]
       , 'Extract Date Till The MILLISECOND' AS [Description]
 UNION
---Use DateTrunc Function
 SELECT @DateTime                            AS [Current Date]
       , DATETRUNC(MICROSECOND,@DateTime)    AS [DateTrunc  Function]
       , 'Extract Date Till The MICROSECOND' AS [Description];
 GO
+
 -- End of example-1
