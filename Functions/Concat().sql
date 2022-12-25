@@ -5,10 +5,10 @@
 -- Date Modified: 22 Dec 2022
 
 --Example 1
--- Concatenate multiple columns having NULL values
+--Concatenate multiple columns having NULL values
 
 --Old Approach Using Add (+) Operator
-
+--USE Northwind Database
 USE Northwind
 GO
  
@@ -20,9 +20,8 @@ SELECT [CompanyName]
 FROM [dbo].[Suppliers];
 GO
 
-
---Use of IsNULL() to replace Null Values in old approach
-
+--Use IsNULL() to replace Null values in old approach
+--USE Northwind Database
 USE Northwind
 GO
  
@@ -35,7 +34,7 @@ FROM [dbo].[Suppliers];
 GO
 
 -- New Approach Using CONCAT() Function
-
+--USE Northwind Database
 USE Northwind
 GO
  
@@ -51,10 +50,10 @@ GO
 
 
 --Example 2
--- Concatenate multiple columns having different data types
+--Concatenate multiple columns having different data types
 
 --Old Approach Using Add (+) Operator
-
+--USE Northwind Database
 USE Northwind
 GO
  
@@ -64,8 +63,8 @@ SELECT [SupplierID]
 FROM  [dbo].[Suppliers];
 GO
 
---Use of CONVERT() function to convert int value to nvarchar datatype
-
+--Use CONVERT() function to convert int value to nvarchar datatype
+--USE Northwind Database
 USE Northwind
 GO
  
@@ -76,7 +75,8 @@ SELECT [SupplierID]
 FROM   [dbo].[Suppliers];
 GO
 
--- New Approach Using CONCAT() function
+--New approach using CONCAT() function
+--USE Northwind Database
 USE Northwind
 GO
  
