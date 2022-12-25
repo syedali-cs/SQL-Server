@@ -1,5 +1,6 @@
 --Script Name: RTRIM()
 --Script Type: Function
+--Article: https://raresql.com/2022/11/09/sql-server-2022-tsql-enhancement-rtrim-function/
 --Developed By: Muhammad Imran
 --Date Created: 09 Nov 2022
 --Date Modified: 22 Dec 2022
@@ -12,9 +13,9 @@ DECLARE @EMAIL VARCHAR(100)
 --Set value of variable 
 SET @EMAIL = 'KenSanchez@gmail.com   ';
 
---Use RTRIM()
-SELECT  @EMAIL   AS [OriginalEmail]
-, RTRIM(@EMAIL)  AS [RTrimEmail];
+--Use RTRIM() function
+SELECT  @EMAIL         AS [OriginalEmail]
+      , RTRIM(@EMAIL)  AS [RTrimEmail];
 GO
 
 --End of example-1
@@ -30,9 +31,9 @@ DECLARE @EMAIL VARCHAR(100)
 --Set value of variable
 SET @EMAIL = 'KenSanchez@gmail.com;';
 
---Use RTRIM()
-SELECT  @EMAIL       AS [OriginalEmail]
-, RTRIM(@EMAIL,'; ')  AS [RTrimEmail];
+--Use RTRIM() function
+SELECT  @EMAIL              AS [OriginalEmail]
+      , RTRIM(@EMAIL,'; ')  AS [RTrimEmail];
 GO
 
 --End of example-2
@@ -46,10 +47,10 @@ DECLARE @EMAIL VARCHAR(100)
 --Set value of variable 
 SET @EMAIL = '     KenSanchez@gmail.com';
 
---Use RTRIM()
-SELECT  @EMAIL   AS [OriginalEmail]
-, RTRIM(@EMAIL)  AS [RTrimEmail]
-, RTRIM(@EMAIL,' ') AS [RTrimEmailWithParameter];
+--Use RTRIM() function
+SELECT  @EMAIL            AS [OriginalEmail]
+      , RTRIM(@EMAIL)     AS [RTrimEmail]
+      , RTRIM(@EMAIL,' ') AS [RTrimEmailWithParameter];
 GO
 
 --End of example-3
