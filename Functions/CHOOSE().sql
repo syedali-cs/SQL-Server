@@ -1,5 +1,6 @@
 --Script Name: CHOOSE()
 --Script Type: Function
+--Article: https://raresql.com/2012/08/05/sql-server-2012-new-logical-function-choose/
 --Developed By: Muhammad Imran
 --Date Created: 5 Aug 2012
 --Date Modified: 23 Dec 2022
