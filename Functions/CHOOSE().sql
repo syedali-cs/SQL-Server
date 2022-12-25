@@ -4,7 +4,7 @@
 --Date Created: 5 Aug 2012
 --Date Modified: 23 Dec 2022
 
---Example
+--Examples
 
 --Use CHOOSE function
 Select CHOOSE(0,'QUARTER-1','QUARTER-2','QUARTER-3','QUARTER-4') AS [ANNUAL QUARTER]
@@ -24,4 +24,4 @@ Select CHOOSE(4,'QUARTER-1','QUARTER-2','QUARTER-3','QUARTER-4') AS [ANNUAL QUAR
 --NULL 
 Select CHOOSE(5,'QUARTER-1','QUARTER-2','QUARTER-3','QUARTER-4') AS [ANNUAL QUARTER]
 
---End of Example
+--End of Examples
