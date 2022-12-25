@@ -1,12 +1,11 @@
--- Script Name: DATETRUNC()
---Script Type: solution
---Article: 
+--Script Name: DATETRUNC()
+--Script Type: Function
+--Article: https://raresql.com/2022/11/04/sql-server-2022-date-time-function-datetrunc/
 --Developed By: Muhammad Imran
 --Date Created: 04 Nov 2022
 --Date Modified: 22 Dec 2022
 
---Example-1
---
+--Example
 
 --Declare variable
 DECLARE @DateTime DATETIME2
@@ -56,4 +55,4 @@ SELECT @DateTime                            AS [Current Date]
       , 'Extract Date Till The MICROSECOND' AS [Description];
 GO
 
--- End of example-1
+--End of Example
