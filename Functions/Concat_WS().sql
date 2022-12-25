@@ -4,7 +4,7 @@
 -- Date Created: 30th Nov 2022
 -- Date Modified: 22 Dec 2022
 
--- Create Sample
+--Create Sample
 USE TEST_DB
 GO
 
@@ -32,12 +32,12 @@ GO
 SELECT * FROM Employees;
 GO
 
--- End of Sample
+--End of Sample
 
 --Example-1
+--Old approach using add (+) operator
 --Concatenate multiple columns & applied semi-colon (;) as a delimiter in between
--- Old approach using add (+) operator
- 
+--Use TEST_DB database 
 USE TEST_DB
 GO
  
@@ -47,7 +47,7 @@ FROM [Employees];
 GO
 
 --New approach using CONCAT_WS() function
-
+--Use TEST_DB database
 USE TEST_DB
 GO
  
@@ -56,11 +56,12 @@ SELECT [EmployeeName]
 FROM [Employees];
 GO
 
--- End of example-1
+--End of example-1
 
 --Example-2
---Concatenate multiple columns & applied space as a delimiter in between
 --Old approach using add (+) operator
+--Concatenate multiple columns & applied space as a delimiter in between
+--Use Northwind database
 USE Northwind
 GO
  
@@ -72,7 +73,7 @@ SELECT [CompanyName]
 FROM [dbo].[Suppliers];
 GO
 
---New Approach using CONCAT_WS() funcation
+--New Approach using CONCAT_WS() function
 SELECT [CompanyName]
      , [Address]
      , [City]
@@ -81,4 +82,4 @@ SELECT [CompanyName]
 FROM [dbo].[Suppliers];
 GO
 
--- End of example-2
+--End of example-2
