@@ -1,5 +1,6 @@
 -- Script Name: CONCAT_WS()
 -- Script Type: Fuction
+-- Article: https://raresql.com/2022/11/30/sql-server-concat_ws-function/
 -- Developed By: Muhammad Imran
 -- Date Created: 30th Nov 2022
 -- Date Modified: 22 Dec 2022
