@@ -1,4 +1,4 @@
---Script Name: LAST_VALUE() function
+--Script Name: LAST_VALUE()
 --Script Type: Function
 --Article: https://raresql.com/2012/08/30/sql-server-2012-analytic-function-last_value/
 --Developed By: Muhammad Imran
