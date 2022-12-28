@@ -26,7 +26,7 @@ GO
  
 --Use CUME_DIST() function
 SELECT Row_Number() OVER (ORDER BY [Carat]
-     , [Gold Rate] as [Row Number]
+     , [Gold Rate]) AS [Row Number]
      , [Date]
      , [Carat]
      , [Gold Rate]
